@@ -9,3 +9,15 @@ C:\Users\grosales\source\repos\RHG\RHG\obj\Debug\RHG.csproj.CoreCompileInputs.ca
 C:\Users\grosales\source\repos\RHG\RHG\obj\Debug\RHG.exe
 C:\Users\grosales\source\repos\RHG\RHG\obj\Debug\RHG.pdb
 C:\Users\grosales\source\repos\RHG\RHG\obj\Debug\RHG.csprojResolveAssemblyReference.cache
+C:\Users\grosales\Documents\rhg\RHG\RHG\bin\Debug\Used.accdb
+C:\Users\grosales\Documents\rhg\RHG\RHG\bin\Debug\RHG.exe.config
+C:\Users\grosales\Documents\rhg\RHG\RHG\bin\Debug\RHG.exe
+C:\Users\grosales\Documents\rhg\RHG\RHG\bin\Debug\RHG.pdb
+C:\Users\grosales\Documents\rhg\RHG\RHG\obj\Debug\RHG.csprojResolveAssemblyReference.cache
+C:\Users\grosales\Documents\rhg\RHG\RHG\obj\Debug\RHG.Form1.resources
+C:\Users\grosales\Documents\rhg\RHG\RHG\obj\Debug\RHG.Properties.Resources.resources
+C:\Users\grosales\Documents\rhg\RHG\RHG\obj\Debug\RHG.csproj.GenerateResource.Cache
+C:\Users\grosales\Documents\rhg\RHG\RHG\obj\Debug\RHG.csproj.CoreCompileInputs.cache
+C:\Users\grosales\Documents\rhg\RHG\RHG\obj\Debug\RHG.exe
+C:\Users\grosales\Documents\rhg\RHG\RHG\obj\Debug\RHG.pdb
+C:\Users\grosales\Documents\rhg\RHG\RHG\obj\Debug\RHG.csproj.ResolveComReference.cache
