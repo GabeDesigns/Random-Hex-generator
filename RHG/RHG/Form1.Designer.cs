@@ -62,7 +62,7 @@
             "McMullan",
             "Schochler",
             "Support"});
-            this.schoolcombo.Location = new System.Drawing.Point(219, 44);
+            this.schoolcombo.Location = new System.Drawing.Point(219, 43);
             this.schoolcombo.Name = "schoolcombo";
             this.schoolcombo.Size = new System.Drawing.Size(247, 21);
             this.schoolcombo.TabIndex = 1;
@@ -117,7 +117,7 @@
             // 
             // InputTextBox
             // 
-            this.InputTextBox.Location = new System.Drawing.Point(298, 180);
+            this.InputTextBox.Location = new System.Drawing.Point(295, 179);
             this.InputTextBox.Name = "InputTextBox";
             this.InputTextBox.Size = new System.Drawing.Size(104, 20);
             this.InputTextBox.TabIndex = 2;
@@ -125,9 +125,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(414, 180);
+            this.button1.Location = new System.Drawing.Point(405, 179);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 19);
+            this.button1.Size = new System.Drawing.Size(61, 20);
             this.button1.TabIndex = 5;
             this.button1.Text = "E&nter";
             this.button1.UseVisualStyleBackColor = true;

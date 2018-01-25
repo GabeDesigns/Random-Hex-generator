@@ -10,12 +10,15 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Net;
 using System.IO;
+using System.Data.OleDb;
 
 
 namespace RHG
 {
+    
     public partial class Form1 : Form
     {
+         
         public Form1()
         {
             InitializeComponent();
@@ -24,6 +27,13 @@ namespace RHG
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            OleDbConnection connection = new OleDbConnection();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\grosales\Documents\rhg\RHG\Used.accdb";
+            if (connection.State == ConnectionState.Closed)
+            {
+                MessageBox.Show("Connection Failed");
+            }
+            
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
@@ -64,7 +74,7 @@ namespace RHG
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
