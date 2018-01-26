@@ -27,11 +27,26 @@ namespace RHG
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            OleDbConnection connection = new OleDbConnection();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\grosales\Documents\rhg\RHG\Used.accdb";
-            if (connection.State == ConnectionState.Closed)
+            using (var connection = new OleDbConnection())
             {
-                MessageBox.Show("Connection Failed");
+                connection.ConnectionString =
+                    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\grosales\Documents\rhg\RHG\Used.accdb;Jet OLEDB:Database Password = MyDbPassword;";
+                   
+                try
+                {
+                    connection.Open();
+
+                    //TODO: do something with the connection
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Connection Failed\r\n\r\n" + ex.Message);
+                }
+                if (connection.State == ConnectionState.Open)
+                {
+                    MessageBox.Show("Connection Successful");
+                }
             }
             
         }
