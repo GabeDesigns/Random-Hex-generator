@@ -45,23 +45,6 @@
             this.schoolcombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.schoolcombo.FormattingEnabled = true;
-            this.schoolcombo.Items.AddRange(new object[] {
-            "Agurrie",
-            "AJJH",
-            "Athletics",
-            "Brown",
-            "CHS",
-            "Cobb",
-            "Crenshaw",
-            "DeZavala",
-            "ECC",
-            "ESC",
-            "Hamblen",
-            "JFCLC",
-            "Kolarik",
-            "McMullan",
-            "Schochler",
-            "Support"});
             this.schoolcombo.Location = new System.Drawing.Point(219, 43);
             this.schoolcombo.Name = "schoolcombo";
             this.schoolcombo.Size = new System.Drawing.Size(247, 21);
@@ -117,7 +100,7 @@
             // 
             // InputTextBox
             // 
-            this.InputTextBox.Location = new System.Drawing.Point(295, 179);
+            this.InputTextBox.Location = new System.Drawing.Point(268, 180);
             this.InputTextBox.Name = "InputTextBox";
             this.InputTextBox.Size = new System.Drawing.Size(104, 20);
             this.InputTextBox.TabIndex = 2;
@@ -125,7 +108,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(405, 179);
+            this.button1.Location = new System.Drawing.Point(378, 180);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 20);
             this.button1.TabIndex = 5;

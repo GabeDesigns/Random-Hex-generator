@@ -31,26 +31,20 @@ namespace RHG
             {
                 connection.ConnectionString =
                     @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\grosales\Documents\rhg\RHG\Used.accdb;Jet OLEDB:Database Password = MyDbPassword;";
-                   
+
                 try
                 {
                     connection.Open();
-
-                    //TODO: do something with the connection
 
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Connection Failed\r\n\r\n" + ex.Message);
                 }
-                if (connection.State == ConnectionState.Open)
-                {
-                    MessageBox.Show("Connection Successful");
-                }
-            }
-            
-        }
 
+            }
+
+        }
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
         {
 
