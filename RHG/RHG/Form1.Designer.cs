@@ -37,6 +37,8 @@
             this.InputLabel1 = new System.Windows.Forms.Label();
             this.InputTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.CodeInputBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +47,7 @@
             this.schoolcombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.schoolcombo.FormattingEnabled = true;
-            this.schoolcombo.Location = new System.Drawing.Point(219, 43);
+            this.schoolcombo.Location = new System.Drawing.Point(204, 71);
             this.schoolcombo.Name = "schoolcombo";
             this.schoolcombo.Size = new System.Drawing.Size(247, 21);
             this.schoolcombo.TabIndex = 1;
@@ -83,6 +85,7 @@
             this.DisplayTextBox.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DisplayTextBox.Location = new System.Drawing.Point(146, 326);
             this.DisplayTextBox.Name = "DisplayTextBox";
+            this.DisplayTextBox.ReadOnly = true;
             this.DisplayTextBox.Size = new System.Drawing.Size(422, 174);
             this.DisplayTextBox.TabIndex = 3;
             this.DisplayTextBox.Text = "Your codes will be displayed here..";
@@ -91,7 +94,7 @@
             // InputLabel1
             // 
             this.InputLabel1.AutoSize = true;
-            this.InputLabel1.Location = new System.Drawing.Point(243, 148);
+            this.InputLabel1.Location = new System.Drawing.Point(185, 129);
             this.InputLabel1.Name = "InputLabel1";
             this.InputLabel1.Size = new System.Drawing.Size(208, 13);
             this.InputLabel1.TabIndex = 4;
@@ -100,7 +103,7 @@
             // 
             // InputTextBox
             // 
-            this.InputTextBox.Location = new System.Drawing.Point(268, 180);
+            this.InputTextBox.Location = new System.Drawing.Point(399, 126);
             this.InputTextBox.Name = "InputTextBox";
             this.InputTextBox.Size = new System.Drawing.Size(104, 20);
             this.InputTextBox.TabIndex = 2;
@@ -108,7 +111,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(378, 180);
+            this.button1.Location = new System.Drawing.Point(485, 72);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 20);
             this.button1.TabIndex = 5;
@@ -116,12 +119,32 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // CodeInputBox
+            // 
+            this.CodeInputBox.Location = new System.Drawing.Point(399, 166);
+            this.CodeInputBox.Name = "CodeInputBox";
+            this.CodeInputBox.Size = new System.Drawing.Size(104, 20);
+            this.CodeInputBox.TabIndex = 6;
+            this.CodeInputBox.TextChanged += new System.EventHandler(this.CodeInputBox_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(281, 169);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Enter your Lock code:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(697, 534);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CodeInputBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.InputTextBox);
             this.Controls.Add(this.InputLabel1);
@@ -151,6 +174,8 @@
         private System.Windows.Forms.Label InputLabel1;
         private System.Windows.Forms.TextBox InputTextBox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox CodeInputBox;
+        private System.Windows.Forms.Label label1;
     }
 }
 
