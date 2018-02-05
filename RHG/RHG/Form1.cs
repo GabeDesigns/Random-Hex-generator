@@ -48,7 +48,7 @@ namespace RHG
             {
                 //showing where to connect for the database
                 connection.ConnectionString =
-                    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\RGABR\Documents\rhg\RHG\Used.accdb;Jet OLEDB:Database Password = MyDbPassword;";
+                    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Program Files (x86)\RHG\Used.accdb;Jet OLEDB:Database Password = MyDbPassword;";
                    
                 try
                 {
@@ -58,7 +58,8 @@ namespace RHG
                     DataTable table = connection.GetSchema("Tables");
                     //adding the tables from the database to the items in the combo box "schoolcombo"
                     schoolcombo.Items.Add(table.ToString().Trim());
-
+                    //Removing "table" item
+                    schoolcombo.Items.Remove("Tables");
                 }
                 catch (Exception ex)
                 {
